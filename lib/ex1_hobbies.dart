@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import '../widgets/HobbyCard.dart';
+import '../model/Hobby.dart';
+
 
 // EX 1 – The hobbies (handout page: EX 1)
 // Part 1: build ONE hobby card.
@@ -26,7 +29,7 @@ void main() {
                       padding: EdgeInsets.all(15),
                       child: Icon(Icons.travel_explore_outlined),
                     ),
-                    Text('Travelling',
+                    Text('Skating',
                       style: TextStyle(
                         color: Colors.white
                     )),
@@ -34,9 +37,10 @@ void main() {
                   ],
 
                 ),
-                
-
+              
               ),
+              SizedBox(height: 20,),
+              Hobbycard(hobby: Travelling()),
             ],
           ),
         ), // YOUR CODE
