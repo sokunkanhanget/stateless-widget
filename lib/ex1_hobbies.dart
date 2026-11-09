@@ -9,7 +9,37 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Container(), // YOUR CODE
+        body: Center(
+          child: Column(
+            children: [
+              Padding(padding: EdgeInsets.all(20)),
+              Container(
+                width: 150,
+                height: 50  ,
+                decoration: BoxDecoration(
+                  color: Colors.green,
+                  borderRadius: BorderRadius.circular(20),
+                ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.all(15),
+                      child: Icon(Icons.travel_explore_outlined),
+                    ),
+                    Text('Travelling',
+                      style: TextStyle(
+                        color: Colors.white
+                    )),
+
+                  ],
+
+                ),
+                
+
+              ),
+            ],
+          ),
+        ), // YOUR CODE
       ),
     ),
   );
