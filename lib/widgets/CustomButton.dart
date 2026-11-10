@@ -33,25 +33,17 @@ class CustomButton extends StatelessWidget {
               style: TextStyle(
                 fontSize: 20,
                 color: Colors.white,
-              ),
-              
+              ),             
             ),
-
-
 
             if(buttons.iconPosition == IconPosition.right) ...[
               SizedBox(width: 10,),
               Icon(buttons.icon),
 
             ] 
-
-          
-          ],
-      
-        ),
-        
+          ],  
+        ),    
       )
-
     );
   }
 
